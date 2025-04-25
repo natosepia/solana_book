@@ -1417,24 +1417,3 @@ http://ieeexplore.ieee.org/document/7555336/
 
 [10] Casper the Friendly Finality Gadget  
 https://arxiv.org/pdf/1710.09437.pdf
-
-\begin{gather}
-    a = b + c \\
-    b = e + f \notag \\
-    c = g + h
-\end{gather}
-
-<script>
-  var a = Array.from(document.querySelectorAll("pre.code"));
-  a.forEach(function (pre) {
-    if (pre.attributes['data-lang'].value) return;
-    var xhr = new XMLHttpRequest();
-    xhr.open("POST", "https://plantuml-service.herokuapp.com/svg");
-    xhr.onload = function () {
-      if (xhr.status === 200 && pre instanceof HTMLPreElement) {
-        pre.parentNode.replaceChild(xhr.responseXML.documentElement, pre);
-      }
-    }
-    xhr.send("@startuml\n" + pre.innerText + "\n@enduml");
-  });
-</script>
