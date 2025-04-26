@@ -1,0 +1,86 @@
+.flex {
+    display: flex;
+}
+
+
+body {
+    text-align: left;
+    font-family: "Courier Prime", monospace;
+    font-weight: 400;
+    font-style: normal;
+}
+/* 見出し */
+h1, h2, h3, h4, h5, h6 {
+    color: #333;
+    margin-top: 5px;
+    margin-bottom: 0.2em;
+    padding: 0;
+}
+h1 {
+    font-size: 20px;
+}
+h2 {
+    font-size: 16px;
+}
+h3 {
+    font-size: 12px;
+}
+/* フォーム */
+form {
+    border : 1px solid #ccc;
+    margin: 0;
+    padding: 0;
+}
+textarea {
+    border : 4px solid #ccf;
+    display: block;
+    margin : 0 0 5px;
+    width:600px;
+    border-radius : 2px;
+    box-shadow : 0 0 5px #ccc;
+}
+input {
+    border : 1px solid #ccc;
+    margin : 0 0 5px;
+
+    width: 100px;
+    border-radius : 1px;
+    box-shadow : 0 0 5px #ccc;
+}
+div.messeageBytesBox{
+    border : 1px solid #ccc;
+    width:600px;
+    padding-left: 10px;
+    
+}
+p{
+    font-size: 12px;
+}
+
+code {
+    font-size: 11px;
+    white-space: pre-wrap;  /* 改行を有効にする */
+    word-break: break-word; /* 必要に応じて行の途中で改行 */
+    color:#22f;
+}
+div.outputText{
+    border : 1px solid #ccc;
+    padding : 10px;
+    margin : 10px;
+    width:600px;
+    border-radius : 2px;
+    /*box-shadow : 0 0 5px #ccc;*/
+}
+table th {
+    background-color: #ccc;
+    border-collapse: collapse;
+    border : 1px solid #ccc;
+    width: 100px;
+    padding: 2px 5px;
+}
+table td {
+    border-collapse: collapse;
+    border : 1px solid #ccc;
+    width: 600px;
+    padding: 1px 5px;
+}
